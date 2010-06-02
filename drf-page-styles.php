@@ -93,12 +93,12 @@ register_activation_hook(__FILE__,'drf_options_install');
 if (is_admin()) {
 	require_once(dirname(__FILE__).'/adminmenu.php');
 	//Check the install is ok
-	$Holder = cms_get_settings('installed_ok');
+	$Holder = drf_get_settings('installed_ok');
 	if (!Holder){
 		update_option("drf_wp_db_version", '');
 		require_once(dirname(__FILE__).'/drf-installer.php');
-		$Holder = cms_get_settings('installed_ok');
-		if (Holder) cms_update_option('installed_ok',true);	
+		$Holder = drf_get_settings('installed_ok');
+		if (Holder) drf_update_option('installed_ok',true);	
 	}
 }
 

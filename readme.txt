@@ -54,8 +54,7 @@ A. This plugin will create a table in the database, this may have failed, on the
 
 
 == Known Issues ==
-
-
+Table creation Problem has been fixed
 
 == Support ==
 
