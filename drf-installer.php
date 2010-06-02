@@ -12,7 +12,7 @@ require_once(ABSPATH . 'wp-admin/upgrade.php');
 // Install variables
 global $wpdb;
 $table_name = $wpdb->prefix . "drf_plugins";
-$drf_wp_db_version = "1.0.0";
+$drf_wp_db_version = "1.0.1";
 
 
 // Create Table 

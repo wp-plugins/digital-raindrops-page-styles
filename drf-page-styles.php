@@ -4,8 +4,8 @@ Plugin Name: Digital Raindrops Page Styles
 Version: 0.1
 Plugin URI: http://www.digitalraindrops.net/Boards/Topic.aspx?TopicID=5/
 Author: David Cox (email: david.cox@digitalraindrops.net)
-Author URI: http://www.digitalraindrops.net/AboutUs.aspx/
-Donation URI: http://www.digitalraindrops.net/Products/10-donate-to-adeptris.aspx/
+Author URI: http://www.digitalraindrops.net//
+Donation URI: http://www.digitalraindrops.net/
 Demo URI: http://digitalraindrops.net/demo/wordpress/style-swapper/
 Description: This plugin enables admin users of WordPress to assign a different Style Sheets per page from the themes directory. 
 Requires at least: 2.7
@@ -92,6 +92,14 @@ register_activation_hook(__FILE__,'drf_options_install');
 //Add the Admin Menus
 if (is_admin()) {
 	require_once(dirname(__FILE__).'/adminmenu.php');
+	//Check the install is ok
+	$Holder = cms_get_settings('installed_ok');
+	if (!Holder){
+		update_option("drf_wp_db_version", '');
+		require_once(dirname(__FILE__).'/drf-installer.php');
+		$Holder = cms_get_settings('installed_ok');
+		if (Holder) cms_update_option('installed_ok',true);	
+	}
 }
 
 /*

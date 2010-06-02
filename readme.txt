@@ -1,9 +1,9 @@
 === Digital Raindrops Page Styles ===
 Contributors: adeptris
-Plugin URI: http://www.digitalraindrops.net/Boards/Topic.aspx?TopicID=5/
+Plugin URI: http://www.digitalraindrops.net/
 Author: David Cox (email: david.cox@digitalraindrops.net)
-Author URI: http://www.digitalraindrops.net/AboutUs.aspx/
-Donation URI: http://www.digitalraindrops.net/Products/10-donate-to-adeptris.aspx/
+Author URI: http://www.digitalraindrops.net/
+Donation URI: http://www.digitalraindrops.net/
 Demo URI: http://digitalraindrops.net/demo/wordpress/style-swapper/
 Requires at least: 2.7
 Tested up to: 2.9
